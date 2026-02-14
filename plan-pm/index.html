@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plan PM Support</title>
+    <meta
+      name="description"
+      content="Support page for Plan PM: quick FAQ, contact details, and legal links."
+    />
+    <style>
+      :root {
+        --bg: #f5f3ef;
+        --surface: #fffdf9;
+        --text: #1f1d1a;
+        --muted: #5e584f;
+        --accent: #0f766e;
+        --border: #d8d1c7;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Avenir Next", "Segoe UI", sans-serif;
+        background: radial-gradient(circle at top right, #f0ece6 0%, var(--bg) 55%);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 2.5rem 1.25rem 4rem;
+      }
+
+      header {
+        margin-bottom: 2rem;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(1.8rem, 3vw, 2.6rem);
+        letter-spacing: -0.02em;
+      }
+
+      .subtitle {
+        margin-top: 0.5rem;
+        color: var(--muted);
+      }
+
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 1.2rem 1rem;
+        margin-bottom: 1rem;
+      }
+
+      h2 {
+        margin: 0 0 0.8rem;
+        font-size: 1.2rem;
+      }
+
+      details {
+        border-top: 1px solid var(--border);
+        padding: 0.7rem 0;
+      }
+
+      details:first-of-type {
+        border-top: 0;
+        padding-top: 0;
+      }
+
+      summary {
+        cursor: pointer;
+        font-weight: 600;
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      .muted {
+        color: var(--muted);
+      }
+
+      .legal-links {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      code {
+        background: #efebe4;
+        padding: 0.1rem 0.35rem;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Plan PM Support</h1>
+        <p class="subtitle">Help, troubleshooting, and contact information.</p>
+      </header>
+
+      <section class="card" aria-labelledby="faq-title">
+        <h2 id="faq-title">Quick FAQ</h2>
+
+        <details>
+          <summary>How do I set up the app after first launch?</summary>
+          <p>
+            To see your schedule, go to Settings and choose: Faculty, Program, Year, Specialization,
+            and Study Mode. The schedule will be downloaded automatically.
+          </p>
+        </details>
+
+        <details>
+          <summary>I can see classes for all groups in my year. How can I fix that?</summary>
+          <p>
+            This is the key Plan PM feature. Open "Group selection" and select only the groups you
+            belong to (for example, L01 for labs or A02 for auditoriums). The app will hide classes for
+            other groups and clean up your view.
+          </p>
+        </details>
+
+        <details>
+          <summary>Does the app work without internet?</summary>
+          <p>
+            Yes. After the first schedule download, it is stored on your phone. You can check your
+            timetable offline (for example, in buildings with weak signal). Connect to the internet from
+            time to time to fetch schedule updates.
+          </p>
+        </details>
+
+        <details>
+          <summary>Why is my schedule empty?</summary>
+          <p>
+            Make sure that:
+          </p>
+          <ul>
+            <li>You have an internet connection (for first-time setup).</li>
+            <li>You selected the correct settings data (Faculty/Program).</li>
+            <li>If it is a weekend or holiday, check another day of the week.</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Is dark mode available?</summary>
+          <p>
+            Yes. The app automatically follows your phone system appearance. If dark mode is enabled on
+            your device, Plan PM will use dark mode too.
+          </p>
+        </details>
+
+        <details>
+          <summary>Where do the in-app news updates come from?</summary>
+          <p>
+            News is fetched directly from official Maritime University of Szczecin communication channels,
+            so you stay up to date with university life.
+          </p>
+        </details>
+
+        <details>
+          <summary>I found a bug. Where can I report it?</summary>
+          <p>
+            Email us at
+            <a href="mailto:piotr.wittig@gmail.com">piotr.wittig@gmail.com</a>. Every report helps us
+            improve the app.
+          </p>
+        </details>
+      </section>
+
+      <section class="card" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <p>
+          Support email:
+          <a href="mailto:piotr.wittig@gmail.com">piotr.wittig@gmail.com</a>
+        </p>
+      </section>
+
+      <section class="card" aria-labelledby="app-title">
+        <h2 id="app-title">App Details</h2>
+        <p><strong>App name:</strong> Plan PM</p>
+        <p><strong>Current version:</strong> <code>1.0.0</code></p>
+      </section>
+
+      <section class="card" aria-labelledby="legal-title">
+        <h2 id="legal-title">Legal</h2>
+        <div class="legal-links">
+          <a href="./privacy-policy.html">Privacy Policy</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
