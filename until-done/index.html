@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UntilDone Support</title>
+    <meta
+      name="description"
+      content="Support page for UntilDone: quick FAQ, contact details, app info, and legal links."
+    />
+    <style>
+      :root {
+        --bg: #f5f3ef;
+        --surface: #fffdf9;
+        --text: #1f1d1a;
+        --muted: #5e584f;
+        --accent: #0f766e;
+        --border: #d8d1c7;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Avenir Next", "Segoe UI", sans-serif;
+        background: radial-gradient(
+          circle at top right,
+          #f0ece6 0%,
+          var(--bg) 55%
+        );
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 2.5rem 1.25rem 4rem;
+      }
+
+      header {
+        margin-bottom: 2rem;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(1.8rem, 3vw, 2.6rem);
+        letter-spacing: -0.02em;
+      }
+
+      .subtitle {
+        margin-top: 0.5rem;
+        color: var(--muted);
+      }
+
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 1.2rem 1rem;
+        margin-bottom: 1rem;
+      }
+
+      h2 {
+        margin: 0 0 0.8rem;
+        font-size: 1.2rem;
+      }
+
+      details {
+        border-top: 1px solid var(--border);
+        padding: 0.7rem 0;
+      }
+
+      details:first-of-type {
+        border-top: 0;
+        padding-top: 0;
+      }
+
+      summary {
+        cursor: pointer;
+        font-weight: 600;
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      .legal-links {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      code {
+        background: #efebe4;
+        padding: 0.1rem 0.35rem;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>UntilDone Support</h1>
+        <p class="subtitle">Help, app details, and legal information.</p>
+      </header>
+
+      <section class="card" aria-labelledby="faq-title">
+        <h2 id="faq-title">Quick FAQ</h2>
+
+        <details>
+          <summary>What does UntilDone do?</summary>
+          <p>
+            UntilDone helps you stay productive by reminding you about upcoming
+            tasks and continuing notifications when tasks are overdue until they
+            are completed.
+          </p>
+        </details>
+
+        <details>
+          <summary>How do reminder notifications work?</summary>
+          <p>
+            The app sends reminder notifications for tasks with deadlines. If a
+            task is overdue, it keeps notifying you and dynamically adjusts
+            notification intervals based on how late the task is.
+          </p>
+        </details>
+
+        <details>
+          <summary>Does the app work offline?</summary>
+          <p>
+            Yes. Core task management and reminder functionality work offline.
+          </p>
+        </details>
+
+        <details>
+          <summary>What internet data does the app use?</summary>
+          <p>
+            The app uses internet access only to connect to our database with
+            scraped data from
+            <code>plany.am.szczecin.pl</code>.
+          </p>
+        </details>
+
+        <details>
+          <summary>Do you collect or log user data?</summary>
+          <p>No. We do not store or log user data.</p>
+        </details>
+
+        <details>
+          <summary>Which languages are supported?</summary>
+          <p>UntilDone currently supports French, English, Spanish, German, Italian, and Polish.</p>
+        </details>
+      </section>
+
+      <section class="card" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <p>
+          Support email:
+          <a href="mailto:piotr.wittig@gmail.com">piotr.wittig@gmail.com</a>
+        </p>
+      </section>
+
+      <section class="card" aria-labelledby="app-title">
+        <h2 id="app-title">App Details</h2>
+        <p><strong>App name:</strong> UntilDone</p>
+        <p><strong>Platform:</strong> Flutter</p>
+      </section>
+
+      <section class="card" aria-labelledby="legal-title">
+        <h2 id="legal-title">Legal</h2>
+        <div class="legal-links">
+          <a href="./privacy-policy.html">Privacy Policy</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
