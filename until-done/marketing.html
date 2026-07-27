@@ -6,8 +6,23 @@
     <title>Until Done - Meet Your Digital Drill Sergeant</title>
     <meta
       name="description"
-      content="Meet Until Done: the task app that relentlessly reminds you until overdue tasks are completed."
+      content="Meet Until Done: the free, fully offline task app that relentlessly reminds you until overdue tasks are completed."
     />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Until Done - Meet Your Digital Drill Sergeant" />
+    <meta
+      property="og:description"
+      content="Free, fully offline task app that keeps notifying you until overdue tasks are done."
+    />
+    <meta
+      property="og:image"
+      content="https://schoji.github.io/until-done/images/3.png"
+    />
+    <meta
+      property="og:url"
+      content="https://schoji.github.io/until-done/marketing.html"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
     <style>
       :root {
         --bg: #0b0f14;
@@ -82,9 +97,16 @@
         display: inline-block;
         color: #07130f;
         font-weight: 700;
+        text-decoration: none;
         background: linear-gradient(135deg, var(--accent), #62e7b6);
         padding: 0.72rem 1rem;
         border-radius: 10px;
+      }
+
+      .fineprint {
+        margin: 0.9rem 0 0;
+        color: var(--muted);
+        font-size: 0.9rem;
       }
 
       .button.secondary {
@@ -173,9 +195,16 @@
           mark the task complete.
         </p>
         <div class="cta-row">
-          <span class="button">Download on the App Store</span>
+          <a
+            class="button"
+            href="https://apps.apple.com/app/id6752790841"
+            >Download on the App Store</a
+          >
           <a class="button secondary" href="./index.html">Support</a>
         </div>
+        <p class="fineprint">
+          Free &middot; No account &middot; No internet connection required
+        </p>
       </div>
     </header>
 
@@ -211,7 +240,12 @@
           </li>
           <li>
             <strong>Works Offline:</strong> notifications are scheduled directly
-            on your device. No cloud delays, no excuses.
+            on your device. No internet connection, no account, no cloud delays,
+            no excuses.
+          </li>
+          <li>
+            <strong>Free and Private:</strong> no ads, no subscriptions, no
+            tracking. Your tasks stay in your phone's storage and nowhere else.
           </li>
         </ul>
       </section>
@@ -220,19 +254,34 @@
         <h2 id="gallery-title">App Preview</h2>
         <div class="grid">
           <div class="shot">
-            <img src="./images/1.png" alt="Until Done app screenshot 1" />
+            <img
+              src="./images/1.png"
+              alt="Task list with All, Today, Tomorrow, Next Week and Done filters, showing today's tasks with due times."
+            />
           </div>
           <div class="shot">
-            <img src="./images/2.png" alt="Until Done app screenshot 2" />
+            <img
+              src="./images/2.png"
+              alt="Completed tasks crossed out in the list after being marked as done."
+            />
           </div>
           <div class="shot">
-            <img src="./images/3.png" alt="Until Done app screenshot 3" />
+            <img
+              src="./images/3.png"
+              alt="Lock screen stacked with repeated overdue notifications, one per minute, for the same unfinished task."
+            />
           </div>
           <div class="shot">
-            <img src="./images/4.png" alt="Until Done app screenshot 4" />
+            <img
+              src="./images/4.png"
+              alt="Tasks grouped by Today, Tomorrow and Next Week, each with its deadline."
+            />
           </div>
           <div class="shot">
-            <img src="./images/5.png" alt="Until Done app screenshot 5" />
+            <img
+              src="./images/5.png"
+              alt="Overdue section highlighting a past-deadline task in red, with an overdue notification banner above it."
+            />
           </div>
         </div>
       </section>
@@ -256,8 +305,8 @@
       Stop lying to yourself that you'll "do it later." Download Until Done
       today, and let us force you to be productive.
       <br />
-      Privacy Policy:
-      <a href="./privacy-policy.html">until-done/privacy-policy.html</a>
+      <a href="./privacy-policy.html">Privacy Policy</a> &middot;
+      <a href="./index.html">Support</a>
     </footer>
   </body>
 </html>
